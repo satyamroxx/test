@@ -1,0 +1,62 @@
+{% include "header.html" %}
+{% load static %}
+<!DOCTYPE >
+<html>
+<head>
+{% load static %}
+<script src="{% static 'backNoWork.js' %}"></script>
+
+<link rel="stylesheet" type="text/css" href={% static 'style.css' %}> 
+   
+   <style>
+      
+ body
+        {
+            background-image:url("https://i.ytimg.com/vi/_Gd8mbQ3-mI/hqdefault.jpg");            
+            background-size:cover;
+        }
+</style>
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Result</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body >
+
+
+<br></br>
+<center>
+
+&nbsp;<h1 class ="hone1">RESULT</h1>
+<br></br>
+<div class="circle ">
+	<br>
+	&nbsp;
+	<h1 class="line">{{query_results1}}</h1><br><br><br><br>
+	<h1>10</h1>
+</div>
+<br>
+{% if  query_results1 >= 9%}
+<h1 class ="hone">Excellent, Well Done!! </h1>
+{% endif %}
+
+{% if  query_results1 >= 7 and query_results1 <= 8 %}
+<h1 class ="hone">VERY GOOD!! </h1>
+{% endif %}
+
+{% if  query_results1 >= 5 and query_results1 <= 6 %}
+<h1 class ="hone">GOOD!! </h1>
+{% endif %}
+
+{% if  query_results1 <= 4%}
+<h1 class ="hone">POOR</h1>
+{% endif %}
+
+</center>
+
+
